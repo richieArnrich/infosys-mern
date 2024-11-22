@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tables</h1>
+    <!-- cellpadding is the distance between the content and the border -->
+    <!-- cellspacing the the distance between the cells in the table -->
+    <table border="1" cellspacing="5" cellpadding="5">
+      <tr>
+        <!-- row 1 -->
+        <!-- th table header -->
+        <th>Name</th>
+        <th>ID</th>
+      </tr>
+      <tr>
+        <!-- row 2 -->
+        <!-- td: table description -->
+        <td>Sameer</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <!-- row 3 -->
+        <td>Akshay</td>
+        <td>10</td>
+      </tr>
+    </table>
+    <!-- --------------------- -->
+    <!-- row span and colspan -->
+    <br />
+    <table border="1">
+      <tr>
+        <th colspan="3">Student Details</th>
+      </tr>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Amith</td>
+        <td rowspan="2">CSE</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Chetan</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Bindu</td>
+        <td>ECE</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Sameer</td>
+        <td>ME</td>
+      </tr>
+    </table>
+  </body>
+</html>

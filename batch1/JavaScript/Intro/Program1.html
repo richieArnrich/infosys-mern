@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading"></h1>
+    <button onclick="changeContent()">Change Content</button>
+    <script>
+      // add content into h1 using js
+      let h1 = document.getElementById("heading");
+      console.log(h1);
+      h1.innerHTML = "I am text added by JS";
+
+      function changeContent() {
+        h1.innerHTML = "I am text changed by JS";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+CSS : cascading style sheets
+CSS is a styling language used to control the layout and appearance 
+of web pages written in HTML or XML
+CSS provides properties to control the appearence of the webpage
+CSS is used to separate the presentation of a document from its structure, 
+which is controlled by HTML or  XML
+CSS is applied in three ways:
+1. Inline CSS: CSS is written directly in the HTML document,using the 
+    style attribute within the elements
+2. Internal CSS: CSS is written in the HTML document, but in a separate section,
+    using <style> tag
+3. External CSS: CSS is written in a separte .css file and linked to html using <link> tag
+
+Internal CSS and External CSS needs CSS selectors
+CSS Selectors
+CSS selectors are used to select the elements in the HTML document to apply the styles
+CSS selectors can be based on various attributes of the HTML elements, 
+such as id, class, tag name, universal
+CSS Selectors Types
+1. Universal Selector: Selects all elements in the document
+2. Class Selector: Selects elements with a specific class
+3. ID Selector: Selects an element with a specific id
+4. Tag Selector: Selects elements with a specific tag name
+-------------------------------------------------------------------------
+CSS Properties:
+
+1. Background Property:
+Used to apply background images/colors to an element
+background-postion: controls the position of the bg-image
+background-size: controls the size of the bg-image
+background-repeat: controls the repetition of the bg-image
+linear-gradient(): applies a color gradient across the element.
+
+2. Font Properties and text properties
+Used to control the font and text of an element
+font-size: control the size of the font
+font-weight: control the thickness of the font
+font-family: control the font-family
+
+color: used to control the color of the text
+font-style: used to control the style of the font (italic, oblique, normal)
+font-variant: used to control the variant of the font (small-caps, normal)
+text-decoration: used to control the decoration of the text(underline,overline)
+text-decoration-style: used to control the decoration-style (underline-wavy)
+
+3. Display Property
+It controls the way a specific element is displayed on the screen
+display: inline = convert a block element to an inline element
+display: block = convert an inline element to a block element
+display: flex = display the elements as a flexbox. Where we can control the position and 
+spacing of the flex elements
+
+----------------------------------------------------------------
+CSS Box Model:
+The CSS box model is a concept that describes the structure of an 
+HTML element in terms of its content, padding,border and margin
+
+The box model consists of four main parts: content, padding, border, and margin
+The content is the actual content of the element, the padding is the space between the content and the
+border, the border is the visible border around the element, and the margin is the space between the
+element and other elements.
+------------------------------------------------------------------
+CSS Positions
+CSS positions are used to control the position of an element on the screen.
+There are 5 Types
+1. Static Position: The default position of an element, 
+it is positioned according to the normal flow of the document. 
+Offset properties are not activated
+2. Relative Position: The element is positioned relative to its normal position, and offset
+properties like top,right,bottom,left are activated.
+3. Absolute Position: The element is taken off from the normal flow of the document
+and positioned relative to its nearest positioned ancestor. Offset properties are activated.
+4. Fixed Position: The element is taken off from the normal flow of the document and positioned
+relative to the viewport (fixed at a point). Offset properties are activated.
+5. Sticky Position: It behaves as a relative element until a given threshold point post which it
+behaves as a fixed element.
+
+------------------------------------------------------------------------
+CSS Animation
+CSS animations are used to create animations on a webpage.
+There are two types of animations: keyframe animations and animation properties.
+Keyframe animations are used to create animations by specifying keyframes, 
+which are points in time where the animation changes.
+(What changes at what time: in keyframes)
+Animation properties are used to control the animation, such as the duration, 
+delay, and iteration count.
+------------------------------------------------------------------------
+Bootrap CSS framework
+Bootstrap is a popular front-end framework that provides a set of pre-designed CSS and HTML
+components, layouts, and plugins to build responsive and mobile-first web applications.
+It provides a wide range of features, including:
+Grid system, typography, spacing, colors, images, icons, tables, forms, buttons, navigation
+alerts, progress bars, modals, tooltips, popovers, carousels, accordions.
+
+Bootstrap Background
+1. bg-primary
+2. bg-success
+3. bg-info
+4. bg-warning
+5. bg-danger
+6. bg-light
+7. bg-dark
+
+Bootstrap topography
+1. h1 ---> h6
+2. display-1 ---> display-6
+
+Padding and Margin
+1. p-0 --> p-5
+2. m-0 --> m-5
+t - top
+b - bottom
+s - left (start)
+e - right (end)
+x - left and right
+y - top and bottom

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .fixed-div {
+        background-color: red;
+        padding: 10px;
+        font-size: 25px;
+        position: fixed;
+        z-index: -1;
+      }
+      p {
+        background-color: purple;
+        position: relative;
+        top: 60px;
+        padding-bottom: 1000px;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixed-div">I am fixed div</div>
+    <p>I am only for scroll</p>
+  </body>
+</html>

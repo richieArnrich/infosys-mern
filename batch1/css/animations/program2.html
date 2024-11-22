@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .my-box {
+        width: 200px;
+        height: 200px;
+        border: 5px solid black;
+        animation-name: changeBg;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes changeBg {
+        0% {
+          background-color: red;
+        }
+        50% {
+          background-color: blue;
+        }
+        100% {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="my-box"></div>
+  </body>
+</html>

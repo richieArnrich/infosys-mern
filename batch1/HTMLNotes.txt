@@ -1,0 +1,71 @@
+html stands for hypertext markup language
+hypertext means: text displayed on the browser
+markup language means: a set of tags used to format the text
+
+HTML is a markup language used to create web pages. 
+It is used to add structure and content to the webpages
+
+*HTML is not a programming language*
+
+Structure of html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    //all content comes here
+</body>
+</html>
+
+Html Elements:
+They are the building blocks of html, and they are made up of html tags
+They are used to define the structure of the webpage
+
+HTML tags:
+They are used to define the elements of the webpage
+They are surrounded by angle brackets < >
+They are used to define the start and end of an element
+They are case sensitive
+eg: <h1>This is the content</h1>
+
+HTML attributes
+They are used to provide extra information about an element
+They are added to the opening tag of an element
+They are in the form of key-value pairs
+Eg: <a href="www.google.com">Click Link here</a>
+
+--------------------------------------------------
+Some html tags
+--------------------------------------------------
+h1 : creates a heading on the webpage
+h2 : creates a subheading on the webpage
+h3 : creates a sub-subheading on the webpage
+They go upto h6..
+
+p : creates a paragraph on the webpage
+b : creates bold text on the webpage
+i : creates italic text on the webpage
+a : creates a link on the webpage
+div: creates a division on the webpage
+
+--------------------------------------------------
+Some html attributes
+--------------------------------------------------
+href : used to specify the link
+src : used to specify the source of an image
+alt: alternate text to an image
+
+--------------------------------------------------
+html tables
+---------------------------------------------------
+created using table tag
+tr : table row
+td : table data
+th : table header
+colspan : span the data across columns
+rowspan : span the data acroos rows
+cellpadding : distance between the content and the border
+cellspacing : distance between the cells of the table

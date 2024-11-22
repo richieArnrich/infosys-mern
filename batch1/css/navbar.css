@@ -1,0 +1,12 @@
+.navbar {
+  background-color: lightcoral;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}

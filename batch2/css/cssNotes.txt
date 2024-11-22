@@ -1,0 +1,90 @@
+===========================================================
+Cascading Style Sheets
+===========================================================
+
+What is CSS?
+----------------
+CSS is the styling language used in html
+It is used to add style to the web pages
+CSS is used to separate the presentation of a document from its structure,
+which is controlled by HTML or XML.
+
+------------------
+CSS can be applied in three ways
+1. Inline CSS
+2. Internal CSS
+3. External CSS
+
+- 1. Inline CSS
+        Inline CSS is used to add style to a single element
+        It is written inside the element's tag (using style attribute)
+        It is not recommended to use inline CSS as it can make the code messy 
+        and difficult to maintain.
+
+- 2. Internal CSS
+        Internal CSS is used to add style to a single HTML document
+        It is written inside the HTML document (inside the head tag using style tag)
+        It is not recommended to use internal CSS as it can make 
+        the code messy and difficult to maintain.
+
+- 3. External CSS
+        External CSS is used to add style to multiple HTML documents
+        It is written in a separate file (with .css extension)
+        It is linked to the html using <link> tag
+        It is recommended to use external CSS as it makes the code clean and easy to
+        maintain.
+
+-----------------------------------------------------
+CSS Selectors
+-----------------------------------------------------
+What are css selectors?
+-----------------
+CSS selectors are used to select the elements in the HTML document 
+They are used to apply styles to the selected elements.
+
+There are four types of selectors
+1.  Element selectors:
+        These are used to select elements based on their element name
+        Example: p {color: blue;} selects all the paragraph elements.
+2.  Class selectors:
+        These are used to select elements based on their class name
+        It is denoted using .
+        Example: .red {color: red;} selects all the elements with class name red.
+3.  ID selectors
+        These are used to select elements based on their id name
+        It is denoted using #
+        Example: #red {color: red;} selects the element with id name red.
+4.  Universal selector:
+        This is used to select all elements in the document
+        It is denoted using *
+        Example: * {color: blue;} selects all the elements in the document.
+
+-----------------------------------------------------
+CSS specificity
+-----------------------------------------------------
+CSS specificity is used to determine which style will be applied when there are 
+multiple styles with the same property and value
+
+Order of css specificity:
+=> id>class>element>universal
+-----------------------------------------------------
+CSS Properties
+-----------------------------------------------------
+1. Text Properties
+color: It is used to change the color of the text.
+font-family: It is used to change the font family of the text.
+font-size: It is used to change the size of the text.
+font-style: It is used to change the style of the text.
+font-weight: It is used to change the weight of the text.
+text-declaration: It is used to change the decoration of the text, like underline etc 
+text-align: used to align the text on left,right and center.
+line-height: used to change the height between two lines in a paragraph
+letter-spacing: used to increase/decrease the space the between each letter in a word
+--------------------------------------------------------
+2. Background Properties
+background-color: It is used to change the background color of the element.
+background-image: It is used to change the background image of the element.
+background-repeat: It is used to change the repeat of the background image.
+background-position: It is used to change the position of the background image.
+background-size: It is used tp change the size of the background image
+------------------------------------------------------------

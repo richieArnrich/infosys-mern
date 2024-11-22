@@ -1,0 +1,68 @@
+JavaScript
+
+    It is a programming language used as a webtechnology
+    It is used for web development
+    It is used for mobile app development and game development
+
+    JavaScript adds functionality to frontend
+    It is used for backend development with Node.js
+
+Variables in JS
+    Variables are used to store data
+    Variables are case sensitive
+    Variables are declared with let, const, var
+
+    Variables using let keyword
+        let name = "Manoj";
+
+        1. Variables using let keyword, values can be reassigned
+            let name = "Manoj";
+            name = "Rahul";
+        2. Variables using let keyword cannot be redeclared
+        let name = "Manoj";
+        let name = "Rahul"; // SyntaxError: Identifier 'name' has already been created
+    
+    Variables using const keyword
+        const name = "Manoj";
+        1. Variables using const keyword, values cannot be reassigned
+        const name = "Manoj";
+        name = "Rahul"; // TypeError: Assignment to constant variable.
+        2. Variables using const keyword can be redeclared
+        const name = "Manoj";
+        const name = "Rahul"; // SyntaxError: Identifier 'name' has already been created
+
+    Variables using var keyword
+        var name = "Manoj";
+        1. Variables using var keyword, values can be reassigned
+        var name = "Manoj";
+        name = "Rahul";
+        2. Variables using var keyword can be redeclared
+        var name = "Manoj";
+        var name = "Rahul"; // No error
+
+Operators in js
+    Question 1 : Given a number which when divided by 7 leaves a remainder 3 and produces
+    a quotient of 8. What is the number?
+    Answer: 59
+
+    Question 2: 
+    let n1 = 5
+    let n2 = 7
+    let r = n1++ + n2-- + 11 + n1
+    clg(r)
+
+    Preincrement Operators
+        The preincrement operator increments the value of a variable before it is used in an expression.
+
+        Working of preincrement:
+        1. The value of the variable is incremented by 1.
+        2. The incremented value is assigned to another variable.
+        3. Access the updated value.
+
+    Postincrement Operator
+        The postincrement operator increments the value of a variable after it is used in an expression.
+
+        Working of postincrement
+        1. The current value of the variable is assigned to another variable.
+        2. The value of the variable is incremented by 1.
+        3. Access the updated value.

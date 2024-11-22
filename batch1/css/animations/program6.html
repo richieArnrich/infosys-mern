@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+      .my-box {
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        animation: moveRotate 5s infinite alternate ease-in-out;
+      }
+      @keyframes moveRotate {
+        from {
+          transform: translateX(0) rotate(0deg);
+        }
+        to {
+          transform: translateX(500px) rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="my-box"></div>
+  </body>
+</html>

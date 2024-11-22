@@ -1,0 +1,123 @@
+What is HTML?
+HTML is a language used to build webpages
+HTML stands for Hypertext Markup Language
+HTML is used to create web pages
+It is the standard markup language for creating webpages
+
+What is XML
+XML is a markup language used to store and transport data
+
+What are HTML elements in html?
+HTML elements are the building blocks of HTML documents. 
+They are represented by tags and are used to define content of a web page.
+
+What are tags?
+Tags are used to define the start and end of an HTML element. 
+They are represented by angle brackets 
+<h1> : opening tag </h1>: closing tag
+---------------------------------------------------------------------
+Structure of HTML page:
+---------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <!-- all content will come here, i am a comment -->
+    <h1>My Webpage</h1>
+    <p>Welcome to my webpage, really excited to learn webdevelopment</p>
+  </body>
+</html>
+
+DOCTYPE:
+<!DOCTYPE html> is the document type declaration, 
+it tells the browser that this is an HTML document
+
+html:
+<html> is the root element of an HTML document.
+
+head:
+The head section contains metadata about the document, such as the title, 
+character encoding, styles, scripts, and links to external documents.
+
+body:
+The body section contains the content of the HTML document, 
+such as text, images, links, forms
+
+------------------------------------------------------------
+Tables in html
+------------------------------------------------------------
+<table border="1" cellspacing="5px" cellpadding="10px">
+      <tr>
+        <th colspan="4">Student Details</th>
+      </tr>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Amith</td>
+        <td>22</td>
+        <td rowspan="2">CSE</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Sarah</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Chetan</td>
+        <td>21</td>
+        <td>ME</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>John</td>
+        <td>22</td>
+        <td>ECE</td>
+      </tr>
+</table>
+
+table tag: 
+- <table> : defines an HTML table
+- <tr> : defines a table row
+- <th> : defines a table header
+- <td> : defines a table data cell
+
+Attributes for table
+attrributes are key="value" pairs which provides information about an element
+- border : specifies the width of the border around the table
+- cellspacing : specifies the space between the cells in a table
+- cellpadding : specifies the space between the cell content and the cell border
+------------------------------------------------------------
+Lists in HTML
+------------------------------------------------------------
+There are three types of Lists
+1. Ordered List
+2. Unordered List
+3. Definition List
+
+1. Ordered List
+- <ol> : defines an ordered list
+- <li> : defines each item in the list
+
+2. Unordered List
+- <ul> : defines an unordered list
+- <li> : defines each item in the list
+
+3. Definition List
+- <dl> : defines definition list
+- <dt> : defines the term in the list
+- <dd> : defines the description of the term in the list
+
+---------------------------------------------------------------
+Links in html
+---------------------------------------------------------------
+- <a> : defines a hyperlink
+- href : specifies the URL of the page the link goes to
+- target : specifies where the page will open
