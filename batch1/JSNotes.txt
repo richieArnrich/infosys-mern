@@ -66,3 +66,55 @@ Operators in js
         1. The current value of the variable is assigned to another variable.
         2. The value of the variable is incremented by 1.
         3. Access the updated value.
+
+Control Flow in JS
+    Control flow statements are used to control the flow of program
+    1. Conditional Statements
+    2. Looping statements
+
+    Conditional Statements: 
+    They execute a set of statements only when a given condition happens to be true
+    1. If statement
+        Syntax:
+        if (condition) {
+            // code to be executed if condition is true
+        }
+        if(10>5){
+            console.log("10 is greater than 5");
+        }
+    2. if-else statement
+        Syntax:
+        if (condition) {
+            // code to be executed if condition is true
+        }else{
+            // code to be executed if condition is false
+        }
+        if(10>5){
+            console.log("10 is greater than 5");
+        }else{
+            console.log("10 is not greater than 5");
+        }
+
+    3. If-else-if ladder
+        Syntax:
+        if (condition1) {
+            // code to be executed if condition1 is true
+        }else if(condition 2){
+            // code to be executed if condition2 is trues
+        }else{
+            // code to be executed if all conditions are false
+        }
+
+    4. Switch case
+        Syntax:
+        switch(expression){
+            case value1:{
+                // code to be executed if expression equals value1
+            }break;
+            case value2:{
+                // code to be executed if expression equals value2
+            }break;
+            default:{
+                // code to be executed if expression does not match any case value
+            }
+        }
