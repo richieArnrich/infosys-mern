@@ -118,3 +118,78 @@ Control Flow in JS
                 // code to be executed if expression does not match any case value
             }
         }
+
+    Looping Statements
+    They execute a set of statements repeatedly for a specified number of times or until 
+    a given condition is becomes false.
+    Types of loops:
+    1. while loop
+    2. do while loop
+    3. for loop
+    ---- dealt later --------
+    4. for in loop (objects)
+    5. for of loop (arrays)
+    6. for each loop (arrays)
+    -------------------------
+
+    Any loop will have three segments:
+    1. Initialization
+    2. Condition
+    3. Increment/Decrement
+
+    while loop
+        Syntax:
+            Initialization
+            while (condition) {
+                // code to be executed
+                update (increment/cecrement)
+            }
+        Working of while loop
+        1. Initialization
+        2. Condition is checked
+        3. If condition is true, code inside the loop is executed
+        4. update is executed
+        5. Condition is checked again and repeat 3 and 4 until condition becomes false
+        Example:
+        int i = 1;
+        while (i <= 5) {
+            console.log("Hello");
+            i++;
+        }
+
+        Practice programs:
+        Write a loop to find the multiple of 5 multiplied 8 times without using * or / or %
+        Write a loop to find the sum of first 10 natural numbers
+        Write a loop to find the sum of all digits from a given number
+        number = 1998;
+        sum of all digits: 1+9+9+8
+        sum = 27
+        Write a loop to find power of a number
+
+    do-while loop
+        Syntax:
+            Initialization
+            do {
+                // do-while block code
+                update (increment/decrement)
+            }while(condition);
+        
+        Working:
+            1. Initialization
+            2. do-while block code is executed
+            3. update is executed
+            4. condition is checked
+            5. repeat 2, 3 and 4 until condition becomes false
+
+    for loop
+        Syntax:
+        for (initialization; condition; update) {
+            // code to be executed
+        }
+
+        Working:
+        1. initialization
+        2. condition is checked
+        3. if condition is true, code inside the loop is executed
+        4. update is executed
+        5. condition is checked again and repeat 2, 3 and 4 until condition becomes false
