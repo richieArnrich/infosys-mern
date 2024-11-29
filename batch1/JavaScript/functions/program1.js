@@ -55,3 +55,6 @@ document.write("<br>----------------------------------------<br>");
 let iifee = (function () {
   document.write("I am an IIFEE function expression");
 })();
+
+console.log("I am on the console");
+console.log(window);
