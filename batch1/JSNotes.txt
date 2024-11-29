@@ -193,3 +193,20 @@ Control Flow in JS
         3. if condition is true, code inside the loop is executed
         4. update is executed
         5. condition is checked again and repeat 2, 3 and 4 until condition becomes false
+
+-------------------------------------------------------------------------------------------------
+BOM and DOM in JavaScript
+-------------------------------------------------------------------------------------------------
+BOM (Browser Object Model)
+BOM is a set of objects and methods that are available in the browser window object. 
+It provides a way to interact with the browser and its features. 
+BOM is used to perform tasks such as opening new windows, setting the title of the page, 
+and getting the current URL.
+
+--------------------------------------
+DOM (Document Object Model)
+--------------------------------------
+DOM is a set of objects and methods that are used to interact with the HTML document.
+It provides a way to access and manipulate the HTML elements in the document.
+DOM is used to perform tasks such as getting the value of an input field, changing the text of
+a paragraph, and adding new elements to the document.

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>I am heading</h1>
+    <p id="p1">I am paragraph, you can change my data using JavaScript</p>
+    <button onclick="changePara()">Change Para</button>
+    <p id="p2">I am paragraph, you can change my data using JavaScript</p>
+    <button onclick="changePara2()">Change Para</button>
+    <script>
+      let pEle = document.getElementById("p1");
+      function changePara() {
+        pEle.innerHTML = "Hi my name is <b>Tom Cruise</b>";
+      }
+      let p2Ele = document.getElementById("p2");
+      function changePara2() {
+        p2Ele.innerText = "Hi my name is <b>Tom Cruise</b>";
+      }
+    </script>
+    <!-- break for 5 mins, meet back at 7:08 -->
+  </body>
+</html>

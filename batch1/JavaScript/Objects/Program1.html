@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Object is javascript</h1>
+    <script>
+      let person = {
+        name: "John",
+        age: 30,
+        occupation: "Developer",
+        city: "Bangalore",
+        country: "India",
+        languages: "English",
+        family: "3 members",
+      };
+      console.log(person);
+      //   for in loop
+      for (let key in person) {
+        document.write(`${key} is ${person[key]} <br>`);
+        document.write(key + " is " + " " + person[key] + "<br>");
+        // template literal
+      }
+    </script>
+  </body>
+</html>

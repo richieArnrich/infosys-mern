@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="h1">I am heading and I can change content</h1>
+    <p id="p1">Para Ele</p>
+    <button onclick="changeContent()">Change</button>
+    <script>
+      // document.getElementById() and querySelector
+      const h1Ele = document.getElementById("h1");
+      let pEle = document.getElementById("p1");
+      function changeContent() {
+        h1Ele.innerHTML = "Content changed";
+      }
+    </script>
+  </body>
+</html>

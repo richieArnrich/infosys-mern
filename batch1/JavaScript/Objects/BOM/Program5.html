@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Click the button to increase value or decrease value</h2>
+    <button onclick="increment()">Increase</button>
+    <button onclick="decrement()">Decrease</button>
+    <button onclick="reset()">Reset</button>
+    <p>I have clicked <span id="count">0</span> times</p>
+
+    <script>
+      let clicks = 0;
+      let countEle = document.getElementById("count");
+      function increment() {
+        clicks++;
+        countEle.textContent = clicks;
+      }
+      function decrement() {
+        if (clicks > 0) {
+          clicks--;
+          countEle.textContent = clicks;
+        } else {
+          alert("You can't decrease below 0");
+        }
+      }
+      function reset() {
+        clicks = 0;
+        countEle.textContent = clicks;
+      }
+    </script>
+  </body>
+</html>

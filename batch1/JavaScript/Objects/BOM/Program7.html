@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Query Selector in JavaScript</h1>
+    <p class="p1">I am para 1</p>
+    <p class="p2">I am para 2</p>
+    <p class="p3">I am para 3</p>
+    <div class="div1">Div 1</div>
+    <div class="div1">Div 1</div>
+    <div class="div1">Div 1</div>
+    <div class="div1">Div 1</div>
+    <div id="div1">Div 1</div>
+    <script>
+      // Query selector
+      let para = document.querySelector(".p1");
+      para.style.backgroundColor = "red";
+      para.style.padding = "10px";
+
+      let div = document.querySelector(".div1");
+      div.style.backgroundColor = "blue";
+
+      let divId = document.querySelector("#div1");
+
+      let whole = document.querySelector("*");
+      console.log(whole);
+      whole.style.backgroundColor = "yellow";
+    </script>
+  </body>
+</html>

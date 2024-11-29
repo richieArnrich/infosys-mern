@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Browser Object Model</h1>
+    <script>
+      //   screen object
+      let screen = window.screen;
+      console.log(screen);
+      if (screen.height > 600) {
+        alert("Screen height is greater than 600");
+        // window.location.href = "https://www.amazon.in/";
+      } else {
+        alert("Screen height is greater than 600");
+        window.location.href = "https://www.flipkart.com/";
+      }
+
+      //   location object
+      console.log(window.location);
+    </script>
+  </body>
+</html>
