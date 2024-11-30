@@ -1,4 +1,4 @@
-CSS : cascading style sheets
+eerCSS : cascading style sheets
 CSS is a styling language used to control the layout and appearance 
 of web pages written in HTML or XML
 CSS provides properties to control the appearence of the webpage
