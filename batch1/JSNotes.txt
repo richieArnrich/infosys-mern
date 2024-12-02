@@ -210,3 +210,10 @@ DOM is a set of objects and methods that are used to interact with the HTML docu
 It provides a way to access and manipulate the HTML elements in the document.
 DOM is used to perform tasks such as getting the value of an input field, changing the text of
 a paragraph, and adding new elements to the document.
+------------------------------------------------------
+Asynchronous JavaScript
+------------------------------------------------------
+Asynchronous JavaScript is a type of JavaScript that allows you to perform tasks in the background.
+Parallel execution of two or more functions
+It allows you to execute code without blocking the execution of other code.
+It is used to perform tasks such as making API calls, loading images, and handling user input.
