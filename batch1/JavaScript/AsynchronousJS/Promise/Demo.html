@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Promise in JS</h1>
+    <script>
+      // Create a new promise
+      function Me() {
+        console.log("Richie makes a promise");
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve("I will teach you JS");
+          }, 2000);
+        });
+      }
+      function success() {
+        console.log("Yeah... Richie taught me JS");
+      }
+      function failure() {
+        console.log("Sorry,Richie didnt teach me JS");
+      }
+      function you() {
+        console.log("Asking richie to teach js");
+        let request = Me("Teach Me JS");
+        request.then(success).catch(failure);
+      }
+
+      you();
+    </script>
+  </body>
+</html>

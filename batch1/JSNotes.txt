@@ -217,3 +217,36 @@ Asynchronous JavaScript is a type of JavaScript that allows you to perform tasks
 Parallel execution of two or more functions
 It allows you to execute code without blocking the execution of other code.
 It is used to perform tasks such as making API calls, loading images, and handling user input.
+
+----------------------------------------------------------
+Callback Functions
+----------------------------------------------------------
+Callback functions are functions that are passed as arguments to other functions.
+They are used to perform tasks such as handling errors, making API calls, and executing code after a
+delay.
+
+Nested callbacks lead to callback Hell
+----------------------------------------------------------
+Callback Hell is a situation where you have multiple nested callbacks.
+It can make your code difficult to read and understand.
+----------------------------------------------------------
+
+Promises In JavaScript
+----------------------------------------------------------
+Promises are a way to handle asynchronous code in a more readable and maintainable way.
+They are used to perform tasks such as making API calls, loading images, and handling user input.
+A promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its
+result.
+
+----------------------------------------------------------
+Async/Await
+----------------------------------------------------------
+Async/Await is a way to write asynchronous code that looks and feels like synchronous code.
+It is used to perform tasks such as making API calls, loading images, and handling user input.
+Async: 
+It is used to declare a function that can be executed asynchronously.
+It makes a function return a promise object by default
+Await:
+It is used to pause the execution of a function until a promise is resolved or rejected.
+It is used to get the result of a promise.
+Await is only used in an async function

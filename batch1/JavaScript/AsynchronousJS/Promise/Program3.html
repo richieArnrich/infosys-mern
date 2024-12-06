@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Aysnc And Await</h1>
+    <script>
+      // a function which gives data
+      function fetchData() {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve({ id: 1, name: "Amith" });
+            console.log("hi i am expected to run first");
+          }, 2000);
+        });
+      }
+
+      async function displayDetails() {
+        let data = await fetchData();
+        console.log(data);
+      }
+
+      displayDetails();
+    </script>
+  </body>
+</html>
