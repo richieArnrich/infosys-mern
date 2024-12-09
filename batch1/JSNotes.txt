@@ -250,3 +250,11 @@ Await:
 It is used to pause the execution of a function until a promise is resolved or rejected.
 It is used to get the result of a promise.
 Await is only used in an async function
+
+-----------------------------------------------------------------------------
+JSON - JavaScript Object Notation
+-----------------------------------------------------------------------------
+It is a representation of JS object in a string format
+It is used to exchange data between a server and a web application
+To convert object to JSON use JSON.stringify(obj)
+To convert JSON to object use JSON.parse(json)

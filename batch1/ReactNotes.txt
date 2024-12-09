@@ -1,0 +1,6 @@
+What is React JS
+React is a JavaScript library for building user interfaces. 
+It allows developers to create reusable UI components and manage state and props (data)
+
+Installing:
+npx create-react-app@latest project1
