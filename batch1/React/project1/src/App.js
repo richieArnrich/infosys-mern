@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import MyFirstComp from "./components/MyFirstComp";
+import MySecComp from "./components/MySecComp";
+import Function1 from "./components/Function1";
 function App() {
+  // Parent Component
+  const person = {
+    name: "Sachin",
+    age: 50,
+    country: "India",
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <MyFirstComp name="Columbus" age="15" /> */}
+      {/* Child Component */}
+      {/* <MySecComp myObj={person} /> */}
+      <Function1 Obj={person} />
     </div>
   );
 }

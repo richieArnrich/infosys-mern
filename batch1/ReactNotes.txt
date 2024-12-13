@@ -4,3 +4,28 @@ It allows developers to create reusable UI components and manage state and props
 
 Installing:
 npx create-react-app@latest project1
+cd project1
+npm start
+---------------------------------------------------------
+Component in ReactJS
+A React component is a small, reusable piece of code that represents a UI element. It can be
+a function, a class. Components can be nested inside each other to create
+complex UI structures.
+
+Functional Component:
+A functional component is a simple function that returns JSX elements. It does not have 
+its own state or lifecycle methods
+To handle data it makes of props
+
+Any component once created has to be called in App.JS
+The component which calls the other component is called as Parent Component
+The component which is called by the Parent Component is called as Child Component
+
+Component Nesting:
+Components can be nested inside each other to create complex UI structures.
+Data can be passed from the top-most component to the lower-most component using props
+This process is called as Props Drilling
+Which leads to unwanted complication in the code
+To overcome this complication we use a function called useContext()
+---------------------------------------------------------
+Homework: Learn class Component in react and state?
