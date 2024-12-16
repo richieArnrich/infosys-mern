@@ -2,6 +2,11 @@ import "./App.css";
 import MyFirstComp from "./components/MyFirstComp";
 import MySecComp from "./components/MySecComp";
 import Function1 from "./components/Function1";
+import ClassComp from "./components/ClassComp";
+import ChangeState from "./components/ChangeState";
+import ToggleState from "./components/ToggleState";
+import ToggleState2 from "./components/ToggleState2";
+import UseState from "./components/UseState";
 function App() {
   // Parent Component
   const person = {
@@ -14,7 +19,16 @@ function App() {
       {/* <MyFirstComp name="Columbus" age="15" /> */}
       {/* Child Component */}
       {/* <MySecComp myObj={person} /> */}
-      <Function1 Obj={person} />
+      {/* <Function1 Obj={person} /> */}
+      <ClassComp />
+      <hr />
+      <ChangeState />
+      <hr />
+      <ToggleState />
+      <hr />
+      <ToggleState2 />
+      <hr />
+      <UseState />
     </div>
   );
 }
