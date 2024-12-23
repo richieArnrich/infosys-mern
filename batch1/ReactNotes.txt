@@ -29,3 +29,20 @@ Which leads to unwanted complication in the code
 To overcome this complication we use a function called useContext()
 ---------------------------------------------------------
 Homework: Learn class Component in react and state?
+
+------------------------------------------------------------------------
+useContext:
+useContext is a hook that allows you to share data between components without passing props down manually.
+It's a way to manage global state in your application.
+
+npx create-react-app project2
+cd project2
+npm start
+
+npm i web-vitals
+
+How to use useContext()
+1. Import the useContext hook from the react library
+2. Create a context(data that is supposed to be passed) using the createContext function from the react library
+3. Wrap the context with the Provider component from the react library
+4. Use the useContext hook in the component where you want to access the context
