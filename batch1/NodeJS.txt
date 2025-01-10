@@ -1,0 +1,19 @@
+Nodejs provides JS runtime environment to execute server side scripting
+- Node.js is built on Chrome's V8 JavaScript engine
+- Node.js is event-driven, non-blocking I/O model that makes it lightweight and efficient
+- Node.js supports multiple programming languages, including JavaScript, TypeScript, and CoffeeScript
+- Node.js has a vast ecosystem of packages and modules available through the npm package manager
+
+Modules in Nodejs
+-------------------
+- Modules are reusable pieces of code that can be used in multiple applications
+- Modules can be written in JavaScript, TypeScript, or other languages
+- Modules can be installed using npm or yarn package managers
+- Modules can be required(imported) in other modules using the `require()` function
+
+Types of modules in Nodejs
+---------------------------
+- Built-in modules: These are modules that come pre-installed with Node.js, such as `http module`
+- Third-party modules: These are modules that are not part of the Node.js core, but can be installed
+using npm
+- Custom modules: These are modules that are created by developers to solve specific problems
