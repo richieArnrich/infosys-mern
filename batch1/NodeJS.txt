@@ -33,3 +33,13 @@ File Module in Nodejs
 - The File module in Node.js allows developers to interact with the file system
 - It provides methods to read and write files, create directories, and delete files
 - It also provides methods to check if a file exists, get file stats, and more
+
+
+------------------------------------
+API
+------------------------------------
+- API stands for Application Programming Interface
+- API is a set of defined rules that enables different applications to communicate with each other
+- API can be used to interact with external services, such as databases, file systems, and web servers
+- API can be used to create web services, such as RESTful APIs, GraphQL APIs, and
+WebSockets, SOAP APIs
