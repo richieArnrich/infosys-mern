@@ -18,7 +18,6 @@
   <body id="body">
     <h1>Fetch data from localserver</h1>
     <script>
-      // fetch data from http://localhost:4000/
       fetch("http://localhost:5000/")
         .then((res) => res.json())
         .then((res) => display(res))

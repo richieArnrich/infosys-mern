@@ -17,3 +17,19 @@ Types of modules in Nodejs
 - Third-party modules: These are modules that are not part of the Node.js core, but can be installed
 using npm
 - Custom modules: These are modules that are created by developers to solve specific problems
+----------------------------------------------------------------------------------------------
+HTTP module in Nodejs
+-------------------
+- The HTTP module in Node.js allows developers to create web servers and handle HTTP requests
+
+What is a webserver?
+-------------------
+- A web server is a program that listens for incoming HTTP requests from clients and sends back HTTP responses
+- Web servers can be used to serve static files, such as HTML, CSS, and images,
+or to run server-side scripts, such as Node.js applications
+-----------------------------
+File Module in Nodejs
+-------------------
+- The File module in Node.js allows developers to interact with the file system
+- It provides methods to read and write files, create directories, and delete files
+- It also provides methods to check if a file exists, get file stats, and more
