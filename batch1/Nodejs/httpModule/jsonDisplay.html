@@ -5,15 +5,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
   </head>
-  <body>
+  <body id="body">
     <h1>Fetch data from localserver</h1>
     <script>
       // fetch data from http://localhost:4000/
-      fetch("http://localhost:4000/")
+      fetch("http://localhost:5000/")
         .then((res) => res.json())
-        .then((res) => console.log(res))
+        .then((res) => display(res))
         .catch((err) => console.log(err));
+      function display(obj) {
+        let div = document.createElement("div");
+        let h2 = document.createElement("h2");
+        h2.innerHTML = obj.message;
+        div.appendChild(h2);
+        let table = document.createElement("table");
+        for (let prop in obj) {
+          if (prop === "message") {
+            continue;
+          }
+          let row = document.createElement("tr");
+          let cell1 = document.createElement("td");
+          let cell2 = document.createElement("td");
+          cell1.innerHTML = prop;
+          cell2.innerHTML = obj[prop];
+          row.appendChild(cell1);
+          row.appendChild(cell2);
+          table.appendChild(row);
+        }
+        div.appendChild(table);
+        let body = document.getElementById("body");
+        body.appendChild(div);
+      }
     </script>
   </body>
 </html>
