@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetching Users from API</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      th {
+        background-color: black;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      .search {
+        width: 50%;
+        display: flex;
+      }
+      .search > svg {
+        height: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="bg-primary text-white py-4 text-center display-4">
+      Fetching Users
+    </h1>
+    <table id="users" class="table text-center"></table>
+    <div class="search">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-3"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+        />
+      </svg>
+      <input
+        type="text"
+        id="userId"
+        name="search"
+        placeholder="search user by ID"
+        class="form-control"
+      />
+      <input
+        type="submit"
+        class="btn btn-primary"
+        onclick="fetchSingleUser()"
+      />
+    </div>
+    <div id="singleUser"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>

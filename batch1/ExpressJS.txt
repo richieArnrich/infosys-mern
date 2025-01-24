@@ -1,0 +1,43 @@
+ExpressJS is a Javascript framework built over node js used for build RESTful APIs
+Express.js is a popular Node.js framework for building web applications and APIs. It provides a flexible way
+to handle HTTP requests and responses, and is often used for building RESTful APIs. Express.js is
+built on top of Node.js and provides a lot of features out of the box.
+
+Features of ExpressJS
+---------------------
+### Features of ExpressJS
+1. Middlewares: These are functions which run in between request-response cycle of client-server 
+architecture
+2. Routing: Express.js provides a powerful routing system that allows you to map URLs to specific
+handlers
+3. Templating: Express.js supports templating engines like EJS, Pug, and Jade
+4. Request and Response Objects: Express.js provides request and response objects that contain information
+about the request and response
+5. Error Handling: Express.js provides a built-in error handling mechanism that allows you to handle errors
+6. Static Files: Express.js provides a built-in static file server that allows you to serve static Files
+7. Body Parser: Express.js provides a built-in body parser that allows you to parse the request object
+8. Session Management: Express.js provides a built-in session management system that allows you to manage
+sessions
+9. Authentication: Express.js provides a built-in authentication system that allows you to authenticate users
+10. Validation: Express.js provides a built-in validation system that allows you to validate user input
+
+What is an API?
+----------------
+### What is an API?
+An API (Application Programming Interface) is a set of defined rules that enables different software 
+systems to communicate with each other.
+It allows a client to request data or services from a server and receive a response back.
+
+---------------------------
+Initialise ExpressJS
+---------------------------
+1. npm init -y
+2. npm install express or (npm install express nodemon cors)
+3. npm install nodemon
+4. npm install cors
+    -- Modify package.json file
+        -- Add dev: "nodemon index.js",
+        -- Add "start": "node index.js",
+        -- Under scripts
+        -- Create index.js file
+5. npm start or (npm run dev)
