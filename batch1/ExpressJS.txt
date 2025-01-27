@@ -41,3 +41,9 @@ Initialise ExpressJS
         -- Under scripts
         -- Create index.js file
 5. npm start or (npm run dev)
+-----------------------------------------
+### Middlware Functions in ExpressJS
+Middleware functions are functions that have access to the request object (req),
+the response object (res), and the next middleware function in the 
+application's request-response cycle.
+The next Middlware is commonly denoted by a variable named next()
