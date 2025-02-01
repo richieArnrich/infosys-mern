@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from "../components/Layout";
 function RegisterPage() {
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [contact, setContact] = useState("");
+
+  const handleSubmit = (event) => {
+    const userObj = {
+      fullName: fullName,
+      email: email,
+      contact: contact,
+    };
+    console.log(userObj);
+    event.preventDefault();
+  };
+
   return (
     <Layout>
       <form style={{ width: "50%", marginLeft: "auto", marginRight: "auto" }}>
@@ -15,6 +29,9 @@ function RegisterPage() {
             name="fulname"
             placeholder="Enter your name"
             className="form-control"
+            onChange={(e) => {
+              setFullName(e.target.value);
+            }}
           />
         </div>
         <div className="form-group mb-3">
@@ -27,6 +44,9 @@ function RegisterPage() {
             name="email"
             placeholder="Enter your email"
             className="form-control"
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
           />
         </div>
         <div className="form-group mb-3">
@@ -39,10 +59,17 @@ function RegisterPage() {
             name="contact"
             placeholder="enter your contact"
             className="form-control"
+            onChange={(e) => {
+              setContact(e.target.value);
+            }}
           />
         </div>
         <div className="form-group mb-3">
-          <input type="submit" className="btn btn-primary" />
+          <input
+            type="submit"
+            className="btn btn-primary"
+            onClick={handleSubmit}
+          />
         </div>
       </form>
     </Layout>

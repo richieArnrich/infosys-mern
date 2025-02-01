@@ -5,9 +5,9 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" to="#">
+        <Link className="navbar-brand" to="/">
           CRUD APP
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,9 +22,9 @@ function Header() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" to="#">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/register">
