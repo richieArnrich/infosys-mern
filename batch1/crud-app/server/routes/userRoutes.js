@@ -16,4 +16,17 @@ router.get("/", async (req, res) => {
   }
 });
 
+// router to insert data
+router.post("/register", async (req, res) => {
+  const { fullName, email, contact } = req.body;
+
+  try {
+    const newUser = new user({ fullName, email, contact });
+    await newUser.save();
+    res.json({ user: newUser, message: "user registered successfully" });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
 module.exports = router;

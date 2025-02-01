@@ -1,19 +1,29 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from "../components/Layout";
+import axios from "axios";
 function RegisterPage() {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     const userObj = {
       fullName: fullName,
       email: email,
       contact: contact,
     };
     console.log(userObj);
-    event.preventDefault();
+    try {
+      const { data } = await axios.post(
+        "http://localhost:4000/users/register",
+        userObj
+      );
+      alert(data.message);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (

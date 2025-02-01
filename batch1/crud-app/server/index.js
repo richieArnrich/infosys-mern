@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const userRoutes = require("./routes/userRoutes");
+const cors = require("cors");
 const port = 4000;
 
 const connect = async () => {
@@ -13,6 +14,9 @@ const connect = async () => {
     console.log(err.message);
   }
 };
+
+app.use(cors());
+app.use(express.json());
 
 app.get("/api", (req, res) => {
   res.json({ message: "API WORKING..." });
