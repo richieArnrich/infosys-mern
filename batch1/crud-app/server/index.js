@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-
+const userRoutes = require("./routes/userRoutes");
 const port = 4000;
 
 const connect = async () => {
@@ -17,6 +17,8 @@ const connect = async () => {
 app.get("/api", (req, res) => {
   res.json({ message: "API WORKING..." });
 });
+
+app.use("/users", userRoutes);
 
 app.listen(port, () => {
   connect();
