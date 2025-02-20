@@ -1,6 +1,5 @@
 const express = require("express");
 const { checkAge, loginAuth } = require("./middlewares/auth");
-const cors = require("cors");
 const bodyParser = require("body-parser");
 const app = express();
 
@@ -11,6 +10,7 @@ app.use(express.json());
 
 // simple route
 app.get("/", (req, res) => {
+  console.log(`Current directory: ${__dirname}`);
   res.sendFile(__dirname + "/index.html");
 });
 
